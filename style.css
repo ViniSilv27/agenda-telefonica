@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor-de-fundo-header: #352F44;
+    --cor-de-fundo-body: #5C5470;
+    --cor-da-fonte: #FAF0E6;
+    --cor-table-form: #B9B4C7
+}
+
+body{
+    font-family: Roboto, sans-serif;
+    color: var(--cor-da-fonte);
+    background-color: var(--cor-de-fundo-body);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    padding: 16px;
+    margin-bottom: 32px;
+    font-size: 32px;
+    background-color: var(--cor-de-fundo-header);
+}
+
+header img{
+    height: 60px;
+    margin-right: 40px;
+}
+
+
+.conteiner{
+    margin: 0 auto;
+    display: flex;
+    align-items: top;
+    justify-content: space-around;
+}
+
+.conteiner-contacts{
+    background-color:var(--cor-table-form);
+    border-radius: 20px;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+    resize: none;
+    max-width: 400px;
+    max-height: 450px;
+
+}
+.conteiner-contacts h2, .conteiner-lista h2{
+    margin-bottom: 32px;
+    font-size: 32px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin-bottom: 2px;
+    
+
+}
+form input, button{
+    padding: 20px 100px;
+    margin-bottom: 8px;
+    width: 100%;
+    resize: none;
+    border: none;
+    border-radius: 8px;
+    text-align:center;
+    text-transform: uppercase;
+
+}
+
+form button{
+    margin-top: 16px;
+    cursor: pointer;
+}
+form button:hover{
+    background-color: var(--cor-de-fundo-body);
+    color: #fff;
+
+}
+.conteiner-head{
+    display: flex;
+
+}
+.conteiner-head img{
+    height: 30px;
+    margin-left: 8px;
+
+margin-right: 16px;
+}
+
+
+.conteiner-lista img{
+    height: 30px;
+}
+.conteiner-contacts h3{
+    font-size: 16px;
+    font-weight:normal;
+}
+
+input::placeholder{
+    position:fixed;
+    left: 5px;
+}
+.conteiner-lista{
+    margin-top:16px;
+}
+
+table{
+    width: 100%;
+}
+
+table th{
+    border-bottom: 2px solid #000;
+    padding: 16px 100px;
+    font-size: 24px;
+    font-weight: bold;
+}
+table td{
+    padding: 16px 0;
+    text-align: center;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}

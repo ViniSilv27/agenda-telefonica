@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="./imagens/cell.png" alt="celular">
+        <h1>Agenda de Contatos</h1>
+    </header>
+    <div class="conteiner">
+        <div class="conteiner-contacts">
+            <div class="conteiner-head">
+                <img src="./imagens/agenda.png" alt="agenda">
+                <h2>Adicionar Contato</h2>
+            </div>
+            <form id="form-contacts" class="form">
+                <h3>Nome:</h3>
+                <input type="text" id="form-nome" required placeholder="Nome de contato">
+                <h3>Telefone</h3>
+                <input type="tel" id="form-numero" required placeholder="Número de contato" oninput="mascaraTelefone(this)">
+                <h3>Email:</h3>
+                <input type="email" id="form-email" placeholder="Email (Opicional)">
+                <button type="submit">Adicionar</button>
+            </form>
+        </div>
+        <div class="conteiner-lista">
+            <h2>Lista de Contatos</h2>
+            <table cellspacing="0">
+                <thead>
+                    <tr>
+                        <th><img src="./imagens/user.png" alt="user"></th>
+                        <th>Nome</th>
+                        <th>Telefone</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="./imagens/cell.png" alt="clipart"></td>
+                        <td>Vinicius</td>
+                        <td>(19)91234-1234</td>
+                        <td>Viniboladao@gmail.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div> 
+    <script src="./main.js"></script>  
+</body>
+</html>
